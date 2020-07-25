@@ -36,7 +36,7 @@ class SiteController extends Controller
             'links3'
         ];
 
-        // forma1: view('sua.view', ['varivel' => 'valor])
+        // forma1: view('sua.view', ['varivel' => 'valor'])
         // forma2: view('sua.view', compact('variavel1', 'variavel2'));
         // forma3: view('sua.view')->with('variavel1', 'valor1')->with(...)->with(...)
         return view('site.ola', compact(

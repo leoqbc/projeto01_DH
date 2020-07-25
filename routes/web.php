@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 // exemplo: ControllerNosso@nomedometódo
-Route::get('/', 'SiteController@home')->name('home');
+Route::get('/', 'PostController@create')->name('home');
 
 // variável de URL
 Route::get('/ola/{nome_cliente}/{sobrenome_cliente}', 'SiteController@ola')->name('ola');
@@ -22,3 +22,11 @@ Route::get('/ola/{nome_cliente}/{sobrenome_cliente}', 'SiteController@ola')->nam
 Route::get('/pagina', 'SiteController@pagina');
 
 Route::get('/contato', 'SiteController@contato')->name('contato');
+
+Route::get('/post/create', 'PostController@create')->name('post_create'); // {{ route('post_create') }}
+
+Route::post('/post/insert', 'PostController@insert')->name('post_insert');
+
+Route::get('/post/read', 'PostController@read')->name('post_read');
+
+Route::get('/post/delete/{post_id}', 'PostController@delete')->name('post_delete');

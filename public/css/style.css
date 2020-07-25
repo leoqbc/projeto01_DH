@@ -1,3 +1,10 @@
 body {
-    background-color: indianred;
+    background-color: #EEE;
+}
+
+.post {
+    width: 600px;
+    background-color: #CCC;
+    padding: 5px;
+    margin: 10px;
 }
